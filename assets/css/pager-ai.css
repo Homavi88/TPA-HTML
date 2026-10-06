@@ -100,6 +100,15 @@ body.ai-mix {
     linear-gradient(105deg, rgba(9, 8, 6, 0.78) 0%, rgba(9, 8, 6, 0.28) 48%, rgba(9, 8, 6, 0.12) 100%);
 }
 
+/* v4: full-bleed AI backgrounds, no inset shot panels */
+.ai-bg-only .slide__inner.split {
+  max-width: 1100px;
+}
+
+.ai-bg-only .slide__inner.cover {
+  max-width: 920px;
+}
+
 .triad--stack,
 .steps--stack {
   grid-template-columns: 1fr;

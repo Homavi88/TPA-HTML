@@ -16,12 +16,13 @@
     />
     <link rel="stylesheet" href="assets/css/pager.css" />
     <link rel="stylesheet" href="assets/css/pager-future.css" />
+    <link rel="stylesheet" href="assets/css/pager-ai.css" />
     <link
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23090806'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia' font-size='22' fill='%23d4b07a'%3ETPA%3C/text%3E%3C/svg%3E"
     />
   </head>
-  <body class="future">
+  <body class="future ai-mix">
     <div class="noise" aria-hidden="true"></div>
     <div class="vignette" aria-hidden="true"></div>
 
@@ -33,7 +34,7 @@
           <span>Tobacco Production Analyzer</span>
         </div>
         <div class="chrome__meta">
-          <span>Пейджер 01 · v2</span>
+          <span>Пейджер 01 · v3</span>
           <span class="chrome__sep"></span>
           <span>Для директоров</span>
         </div>
@@ -41,8 +42,8 @@
       <div class="chrome__tools">
         <nav class="versions" aria-label="Версии презентации">
           <a href="index.html">ИИ фон</a>
-          <a href="pager-ai-shots.html">ИИ × лист</a>
-          <a href="pager-leaf.html" class="is-on">Лист</a>
+          <a href="pager-ai-shots.html" class="is-on">ИИ × лист</a>
+          <a href="pager-leaf.html">Лист</a>
           <a href="pager1-v1.html">Версия 1</a>
         </nav>
         <p class="slogan-mark">Фабрика Будущего</p>
@@ -66,7 +67,7 @@
 
     <main class="deck" id="deck">
       <section class="slide is-active" data-theme="hero" data-title="Фабрика Будущего">
-        <div class="slide__bg kenburns bg2-hero"></div>
+        <div class="slide__bg kenburns bg3-hero"></div>
         <div class="slide__veil veil--heavy"></div>
         <div class="ai-line" aria-hidden="true"></div>
         <div class="slide__inner cover">
@@ -97,30 +98,34 @@
       </section>
 
       <section class="slide" data-theme="leaf" data-title="Лист">
-        <div class="slide__bg kenburns bg2-field"></div>
+        <div class="slide__bg kenburns bg3-master"></div>
         <div class="slide__veil veil--mid"></div>
-        <div class="slide__inner split">
+        <div class="slide__inner split split--shot">
           <div>
             <p class="eyebrow reveal">01 · Мы табачная компания</p>
             <h2 class="reveal" style="--d: 0.12s">Всё начинается с листа.</h2>
             <p class="body reveal" style="--d: 0.24s">
               Происхождение, текстура, влажность, как лист ведёт себя в сушилке — это не «ещё один параметр».
-              Это продукт. Фабрика Будущего умеет читать лист так же внимательно, как мастер, и делает это по каждой партии.
+              Это продукт. ИИ Фабрики Будущего читает жилки так же внимательно, как мастер — по каждой партии.
             </p>
+            <ul class="ticks reveal" style="--d: 0.32s">
+              <li>Лист задаёт Yield ещё до входа на линию</li>
+              <li>Одинаковое сырьё может быть переработано по-разному</li>
+              <li>Вопрос «линия или лот?» должен закрываться за минуту</li>
+              <li>ИИ не заменяет мастера — несёт его глаз на каждую смену</li>
+            </ul>
           </div>
-          <ul class="ticks reveal" style="--d: 0.32s">
-            <li>Лист задаёт Yield ещё до входа на линию</li>
-            <li>Одинаковое сырьё может быть переработано по-разному</li>
-            <li>Вопрос «линия или лот?» должен закрываться за минуту</li>
-            <li>ИИ не заменяет мастера — он несёт его глаз на каждую смену</li>
-          </ul>
+          <figure class="shot reveal" style="--d: 0.28s">
+            <div class="shot__img bg3-master"></div>
+            <figcaption>ИИ поверх глаза мастера: жилки листа читаются как параметры партии</figcaption>
+          </figure>
         </div>
       </section>
 
       <section class="slide" data-theme="problem" data-title="Типичный день">
-        <div class="slide__bg kenburns bg2-cure"></div>
+        <div class="slide__bg kenburns bg3-without"></div>
         <div class="slide__veil veil--mid"></div>
-        <div class="slide__inner split">
+        <div class="slide__inner split split--shot">
           <div>
             <p class="eyebrow reveal">02 · Пока ИИ не включён</p>
             <h2 class="reveal" style="--d: 0.12s">Партия закончилась.<br />DRY Yield не в норме.</h2>
@@ -128,32 +133,44 @@
               Дальше знакомый цикл без искусственного интеллекта: база, Excel, поиск «той самой» партии, очередь к эксперту.
               Фабрика Будущего так не работает.
             </p>
+            <ol class="cycle reveal" style="--d: 0.32s">
+              <li><span>01</span>Выгрузка и Excel</li>
+              <li><span>02</span>Вспомнить, что смотреть на листе и на линии</li>
+              <li><span>03</span>Спросить коллегу, если он в Control Room</li>
+              <li class="cycle__fail"><span>04</span>Если нет — опыт листа начинается с нуля</li>
+            </ol>
           </div>
-          <ol class="cycle reveal" style="--d: 0.32s">
-            <li><span>01</span>Выгрузка и Excel</li>
-            <li><span>02</span>Вспомнить, что смотреть на листе и на линии</li>
-            <li><span>03</span>Спросить коллегу, если он в Control Room</li>
-            <li class="cycle__fail"><span>04</span>Если нет — опыт листа начинается с нуля</li>
-          </ol>
+          <figure class="shot reveal" style="--d: 0.28s">
+            <div class="shot__img bg3-without"></div>
+            <figcaption>Цех без ИИ: данные на экранах есть, ответа по партии нет</figcaption>
+          </figure>
         </div>
       </section>
 
       <section class="slide" data-theme="paid" data-title="Данные">
-        <div class="slide__bg kenburns slow bg2-ai"></div>
+        <div class="slide__bg kenburns slow bg3-unread"></div>
         <div class="slide__veil veil--heavy"></div>
-        <div class="slide__inner">
-          <p class="eyebrow reveal">03 · Инфраструктура уже есть</p>
-          <h2 class="reveal" style="--d: 0.1s">Лист уже оцифрован.<br />ИИ его ещё не читает.</h2>
+        <div class="slide__inner stack">
+          <div class="split split--shot">
+            <div>
+              <p class="eyebrow reveal">03 · Инфраструктура уже есть</p>
+              <h2 class="reveal" style="--d: 0.1s">Лист уже оцифрован.<br />ИИ его ещё не читает.</h2>
+            </div>
+            <figure class="shot reveal" style="--d: 0.22s">
+              <div class="shot__img bg3-unread"></div>
+              <figcaption>150+ нитей данных с листа не доходят до модели — ИИ ещё выключен</figcaption>
+            </figure>
+          </div>
           <div class="stats">
-            <article class="stat reveal" style="--d: 0.2s">
+            <article class="stat reveal" style="--d: 0.28s">
               <div class="stat__n" data-count="150" data-suffix="+">0</div>
               <p>параметров партии уже пишутся: сушка, влажность листа, газ, напыление, лоты</p>
             </article>
-            <article class="stat reveal" style="--d: 0.32s">
+            <article class="stat reveal" style="--d: 0.38s">
               <div class="stat__n" data-count="15" data-prefix="~">0</div>
               <p>показателей смотрим глазами. Остальные 130+ — слепая зона Фабрики Будущего</p>
             </article>
-            <article class="stat reveal" style="--d: 0.44s">
+            <article class="stat reveal" style="--d: 0.48s">
               <div class="stat__n muted-n">AI</div>
               <p>TPA ставит локальную модель на эти данные — без облака и без нового железа</p>
             </article>
@@ -162,7 +179,8 @@
       </section>
 
       <section class="slide" data-theme="gap" data-title="Три элемента">
-        <div class="slide__veil veil--solid"></div>
+        <div class="slide__bg kenburns bg3-formula"></div>
+        <div class="slide__veil veil--heavy"></div>
         <div class="slide__inner">
           <p class="eyebrow reveal">04 · Формула Фабрики Будущего</p>
           <h2 class="reveal" style="--d: 0.12s">Лист. Данные. Искусственный интеллект.</h2>
@@ -180,16 +198,16 @@
             <article class="card card--gold reveal" style="--d: 0.46s">
               <span class="card__k">03</span>
               <h3>TPA · ИИ</h3>
-              <p>Соединяет лист и линию. Отвечает как коллега: гипотеза, исключения, уверенность.</p>
+              <p>Соединяет лист и линию в одной точке. Отвечает как коллега: гипотеза, исключения, уверенность.</p>
             </article>
           </div>
         </div>
       </section>
 
       <section class="slide" data-theme="what" data-title="ИИ на фабрике">
-        <div class="slide__bg kenburns bg2-brief"></div>
+        <div class="slide__bg kenburns bg3-local"></div>
         <div class="slide__veil veil--mid"></div>
-        <div class="slide__inner split">
+        <div class="slide__inner split split--shot">
           <div>
             <p class="eyebrow reveal">05 · Как внедряем ИИ</p>
             <h2 class="reveal" style="--d: 0.12s">Не пилот в облаке. ИИ на рабочем месте цеха.</h2>
@@ -197,19 +215,24 @@
               TPA — локальное веб-приложение. Модель не уходит в интернет. Она видит партию, наши описания 150+ параметров,
               документы PR-OM и уроки мастеров по листу. Это и есть искусственный интеллект Фабрики Будущего.
             </p>
+            <ul class="ticks reveal" style="--d: 0.32s">
+              <li>Запуск в браузере на рабочем месте</li>
+              <li>Прямой доступ к MSSQL, PSS4, ODC, PPL</li>
+              <li>Одна партия — один экран, включая лоты листа</li>
+              <li>Сравнение 14 партий смеси за десять секунд</li>
+              <li>AI-разбор на языке производства, не общих фраз</li>
+            </ul>
           </div>
-          <ul class="ticks reveal" style="--d: 0.32s">
-            <li>Запуск в браузере на рабочем месте</li>
-            <li>Прямой доступ к MSSQL, PSS4, ODC, PPL</li>
-            <li>Одна партия — один экран, включая лоты листа</li>
-            <li>Сравнение 14 партий смеси за десять секунд</li>
-            <li>AI-разбор на языке производства, не общих фраз</li>
-          </ul>
+          <figure class="shot reveal" style="--d: 0.28s">
+            <div class="shot__img bg3-local"></div>
+            <figcaption>Локальный ИИ: лист на столе, модель на рабочем месте, без облака</figcaption>
+          </figure>
         </div>
       </section>
 
       <section class="slide" data-theme="money" data-title="Четыре вопроса">
-        <div class="slide__veil veil--solid"></div>
+        <div class="slide__bg kenburns bg3-four"></div>
+        <div class="slide__veil veil--heavy"></div>
         <div class="slide__inner">
           <p class="eyebrow reveal">06 · Зачем ИИ директорам</p>
           <h2 class="reveal" style="--d: 0.1s">Четыре денежных вопроса вокруг листа.</h2>
@@ -240,9 +263,9 @@
       </section>
 
       <section class="slide" data-theme="yield" data-title="DRY YIELD">
-        <div class="slide__bg kenburns bg2-inspect"></div>
+        <div class="slide__bg kenburns bg3-yield"></div>
         <div class="slide__veil veil--mid"></div>
-        <div class="slide__inner split">
+        <div class="slide__inner split split--shot">
           <div>
             <p class="eyebrow reveal">07 · Главный KPI цеха</p>
             <h2 class="reveal" style="--d: 0.12s">ИИ читает Yield, пока лист ещё в памяти смены.</h2>
@@ -250,14 +273,18 @@
               Соотношение полученного табака (к 0% влажности) к загруженному листу. TPA показывает отклонение, гипотезу
               и основания — пока открывается браузер.
             </p>
+            <ul class="ticks reveal" style="--d: 0.3s">
+              <li>Yield партии сразу в списке, не в месячном отчёте</li>
+              <li>ИИ говорит, где мы от цели смеси</li>
+              <li>Связи секций и параметры вне цели — не гадание</li>
+              <li>Отдельно: что точно не причина</li>
+              <li>Сравнение с хорошей партией того же листа</li>
+            </ul>
           </div>
-          <ul class="ticks reveal" style="--d: 0.3s">
-            <li>Yield партии сразу в списке, не в месячном отчёте</li>
-            <li>ИИ говорит, где мы от цели смеси</li>
-            <li>Связи секций и параметры вне цели — не гадание</li>
-            <li>Отдельно: что точно не причина</li>
-            <li>Сравнение с хорошей партией того же листа</li>
-          </ul>
+          <figure class="shot reveal" style="--d: 0.28s">
+            <div class="shot__img bg3-yield"></div>
+            <figcaption>ИИ на выходе линии: цель и факт Yield на том же кадре, что и лист</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -268,7 +295,7 @@
           <h2 class="reveal" style="--d: 0.1s">Качество. Влажность. Происхождение.</h2>
           <div class="pillars">
             <article class="pillar reveal" style="--d: 0.2s">
-              <div class="pillar__photo bg2-inspect"></div>
+              <div class="pillar__photo bg3-quality"></div>
               <h3>Качество листа</h3>
               <p>
                 Цели В ЦЕЛИ / ВНЕ ЦЕЛИ. Ручные правки оператора помечены. Проблемная партия сравнивается с эталонной —
@@ -276,7 +303,7 @@
               </p>
             </article>
             <article class="pillar reveal" style="--d: 0.34s">
-              <div class="pillar__photo bg2-moisture"></div>
+              <div class="pillar__photo bg3-moisture"></div>
               <h3>Влажность листа</h3>
               <p>
                 Пробы тримовки против лаборатории QA. Расхождение от 0,2% — уже величина коррекции влагомера.
@@ -284,7 +311,7 @@
               </p>
             </article>
             <article class="pillar reveal" style="--d: 0.48s">
-              <div class="pillar__photo bg2-lots"></div>
+              <div class="pillar__photo bg3-lots"></div>
               <h3>Лоты листа</h3>
               <p>
                 Происхождение, текстура, вес — в той же таблице, что процесс. Сначала «лист был одинаковым?»,
@@ -296,141 +323,156 @@
       </section>
 
       <section class="slide" data-theme="shift" data-title="Было / Стало">
-        <div class="slide__veil veil--solid"></div>
-        <div class="slide__inner">
-          <p class="eyebrow reveal">09 · Что меняет ИИ</p>
-          <h2 class="reveal" style="--d: 0.1s">Мастер листа больше не заложника календаря.</h2>
-          <div class="table reveal" style="--d: 0.22s">
-            <div class="table__head">
-              <span>Было</span>
-              <span>Фабрика Будущего</span>
-            </div>
-            <div class="table__row">
-              <span>30–60 минут на подготовку данных</span>
-              <span>1 клик, секунды</span>
-            </div>
-            <div class="table__row">
-              <span>Сравнение партий — часы в Excel</span>
-              <span>1–2 минуты, включая AI и экспорт</span>
-            </div>
-            <div class="table__row">
-              <span>«Что смотреть на листе?» — спросить эксперта</span>
-              <span>ИИ сам расставляет приоритеты</span>
-            </div>
-            <div class="table__row">
-              <span>Ответ, когда эксперт свободен</span>
-              <span>Ответ в любой момент, с аргументами</span>
-            </div>
-            <div class="table__row">
-              <span>Знание листа живёт в двух-трёх головах</span>
-              <span>Полный лог анализов и уроков</span>
-            </div>
-            <div class="table__row">
-              <span>Новичок 3–6 месяцев нащупывает базу</span>
-              <span>Система объясняет лист и линию в работе</span>
+        <div class="slide__bg kenburns bg3-shift"></div>
+        <div class="slide__veil veil--heavy"></div>
+        <div class="slide__inner split split--shot">
+          <div>
+            <p class="eyebrow reveal">09 · Что меняет ИИ</p>
+            <h2 class="reveal" style="--d: 0.1s">Мастер листа больше не заложник календаря.</h2>
+            <div class="table reveal" style="--d: 0.22s">
+              <div class="table__head">
+                <span>Было</span>
+                <span>Фабрика Будущего</span>
+              </div>
+              <div class="table__row">
+                <span>30–60 минут на подготовку данных</span>
+                <span>1 клик, секунды</span>
+              </div>
+              <div class="table__row">
+                <span>Сравнение партий — часы в Excel</span>
+                <span>1–2 минуты, включая AI и экспорт</span>
+              </div>
+              <div class="table__row">
+                <span>«Что смотреть на листе?» — спросить эксперта</span>
+                <span>ИИ сам расставляет приоритеты</span>
+              </div>
+              <div class="table__row">
+                <span>Ответ, когда эксперт свободен</span>
+                <span>Ответ в любой момент, с аргументами</span>
+              </div>
+              <div class="table__row">
+                <span>Знание листа живёт в двух-трёх головах</span>
+                <span>Полный лог анализов и уроков</span>
+              </div>
+              <div class="table__row">
+                <span>Новичок 3–6 месяцев нащупывает базу</span>
+                <span>Система объясняет лист и линию в работе</span>
+              </div>
             </div>
           </div>
+          <figure class="shot reveal" style="--d: 0.28s">
+            <div class="shot__img bg3-shift"></div>
+            <figcaption>Слева календарь эксперта. Справа — локальный ИИ и лист на одном столе</figcaption>
+          </figure>
         </div>
       </section>
 
       <section class="slide" data-theme="steps" data-title="Три шага">
-        <div class="slide__bg kenburns bg2-ai"></div>
+        <div class="slide__bg kenburns bg3-steps"></div>
         <div class="slide__veil veil--heavy"></div>
-        <div class="slide__inner">
-          <p class="eyebrow reveal">10 · Как ИИ работает в смене</p>
-          <h2 class="reveal" style="--d: 0.1s">Три шага. Лист и линия на одном экране.</h2>
-          <div class="steps">
-            <article class="step reveal" style="--d: 0.22s">
-              <span>01</span>
-              <h3>Вижу партию и лист</h3>
-              <p>
-                Период, смесь, партия. Секции линии, цель PPL, ручные правки, лоты листа, пробы влагомеров. Ноль запросов.
-              </p>
-            </article>
-            <article class="step reveal" style="--d: 0.36s">
-              <span>02</span>
-              <h3>Сравниваю за секунды</h3>
-              <p>
-                Две, пять, четырнадцать партий. Отличия по процессу и по сырью. Полдня Excel — десять секунд.
-              </p>
-            </article>
-            <article class="step reveal" style="--d: 0.5s">
-              <span>03</span>
-              <h3>Спрашиваю ИИ как коллегу</h3>
-              <p>
-                Локальная модель + описания параметров + уроки по листу. Гипотеза, исключения, уверенность. Без выдумок.
-              </p>
-            </article>
+        <div class="slide__inner split split--shot">
+          <div>
+            <p class="eyebrow reveal">10 · Как ИИ работает в смене</p>
+            <h2 class="reveal" style="--d: 0.1s">Три шага. Лист и линия на одном экране.</h2>
+            <div class="steps steps--stack">
+              <article class="step reveal" style="--d: 0.22s">
+                <span>01</span>
+                <h3>Вижу партию и лист</h3>
+                <p>Секции линии, PPL, лоты листа, пробы влагомеров. Ноль запросов.</p>
+              </article>
+              <article class="step reveal" style="--d: 0.34s">
+                <span>02</span>
+                <h3>Сравниваю за секунды</h3>
+                <p>Две, пять, четырнадцать партий. Отличия по процессу и по сырью.</p>
+              </article>
+              <article class="step reveal" style="--d: 0.46s">
+                <span>03</span>
+                <h3>Спрашиваю ИИ как коллегу</h3>
+                <p>Гипотеза, исключения, уверенность. Без выдумок.</p>
+              </article>
+            </div>
           </div>
+          <figure class="shot reveal" style="--d: 0.28s">
+            <div class="shot__img bg3-steps"></div>
+            <figcaption>Три панели ИИ над листом: вижу → сравниваю → спрашиваю</figcaption>
+          </figure>
         </div>
       </section>
 
       <section class="slide" data-theme="trust" data-title="Доверие">
-        <div class="slide__bg kenburns bg2-brief"></div>
+        <div class="slide__bg kenburns bg3-airgap"></div>
         <div class="slide__veil veil--mid"></div>
-        <div class="slide__inner">
-          <p class="eyebrow reveal">11 · ИИ, которому можно отдать смену</p>
-          <h2 class="reveal" style="--d: 0.1s">Он понимает производство — потому что учится на нашем листе.</h2>
-          <div class="triad">
-            <article class="card reveal" style="--d: 0.22s">
-              <span class="card__k">I</span>
-              <h3>Не из интернета</h3>
-              <p>Нет доступа в сеть. Только эта партия, наши правила, наши описания листа и наши уроки.</p>
-            </article>
-            <article class="card reveal" style="--d: 0.34s">
-              <span class="card__k">II</span>
-              <h3>Не чёрный ящик</h3>
-              <p>У каждой гипотезы — параметры-основания. Анализ воспроизводим. Данные сохранены.</p>
-            </article>
-            <article class="card card--gold reveal" style="--d: 0.46s">
-              <span class="card__k">III</span>
-              <h3>Судья — мастер</h3>
-              <p>
-                Любой вывод можно поправить. Подтверждённые уроки входят в базу. Через месяц ИИ знает наши типовые
-                проблемы по листу лучше нового сотрудника.
-              </p>
-            </article>
+        <div class="slide__inner split split--shot">
+          <div>
+            <p class="eyebrow reveal">11 · ИИ, которому можно отдать смену</p>
+            <h2 class="reveal" style="--d: 0.1s">Он понимает производство — потому что учится на нашем листе.</h2>
+            <div class="triad triad--stack">
+              <article class="card reveal" style="--d: 0.22s">
+                <span class="card__k">I</span>
+                <h3>Не из интернета</h3>
+                <p>Нет доступа в сеть. Только эта партия, наши правила, наши описания листа и наши уроки.</p>
+              </article>
+              <article class="card reveal" style="--d: 0.32s">
+                <span class="card__k">II</span>
+                <h3>Не чёрный ящик</h3>
+                <p>У каждой гипотезы — параметры-основания. Анализ воспроизводим.</p>
+              </article>
+              <article class="card card--gold reveal" style="--d: 0.42s">
+                <span class="card__k">III</span>
+                <h3>Судья — мастер</h3>
+                <p>Вывод можно поправить. Уроки входят в базу знаний цеха.</p>
+              </article>
+            </div>
           </div>
+          <figure class="shot reveal" style="--d: 0.28s">
+            <div class="shot__img bg3-airgap"></div>
+            <figcaption>ИИ в цехе, не в облаке: стойка на фабрике, лист рядом, наружу сети нет</figcaption>
+          </figure>
         </div>
       </section>
 
       <section class="slide" data-theme="road" data-title="Дальше">
-        <div class="slide__veil veil--solid"></div>
-        <div class="slide__inner split road">
+        <div class="slide__bg kenburns bg3-predict"></div>
+        <div class="slide__veil veil--mid"></div>
+        <div class="slide__inner split split--shot">
           <div>
             <p class="eyebrow reveal">12 · Дорожная карта Фабрики Будущего</p>
             <h2 class="reveal" style="--d: 0.1s">Сначала быстрый разбор. Затем ИИ, который предупреждает.</h2>
             <p class="body reveal" style="--d: 0.22s">
               Все шаги — на уже собранных данных листа и линии. Не новое железо. Фокус интеллекта.
             </p>
+            <ol class="roadmap reveal" style="--d: 0.3s">
+              <li>
+                <strong>Прогноз DRY Yield в середине партии</strong>
+                <span>пока лист ещё можно спасти</span>
+              </li>
+              <li>
+                <strong>Контроль стабильности</strong>
+                <span>дрейф параметров до брака</span>
+              </li>
+              <li>
+                <strong>Скрытые зависимости листа и линии</strong>
+                <span>какие из 150+ параметров двигают Yield</span>
+              </li>
+              <li>
+                <strong>Перенос удачной комбинации</strong>
+                <span>на следующую партию с тем же сырьём</span>
+              </li>
+              <li>
+                <strong>IS / ET и Kitchen</strong>
+                <span>досыпки, соусы и ароматы — уже есть в данных</span>
+              </li>
+            </ol>
           </div>
-          <ol class="roadmap reveal" style="--d: 0.3s">
-            <li>
-              <strong>Прогноз DRY Yield в середине партии</strong>
-              <span>пока лист ещё можно спасти</span>
-            </li>
-            <li>
-              <strong>Контроль стабильности</strong>
-              <span>дрейф параметров до брака</span>
-            </li>
-            <li>
-              <strong>Скрытые зависимости листа и линии</strong>
-              <span>какие из 150+ параметров двигают Yield</span>
-            </li>
-            <li>
-              <strong>Перенос удачной комбинации</strong>
-              <span>на следующую партию с тем же сырьём</span>
-            </li>
-            <li>
-              <strong>IS / ET и Kitchen</strong>
-              <span>досыпки, соусы и ароматы — уже есть в данных</span>
-            </li>
-          </ol>
+          <figure class="shot reveal" style="--d: 0.28s">
+            <div class="shot__img bg3-predict"></div>
+            <figcaption>ИИ на ходу партии: прогноз Yield, пока лист ещё на ленте</figcaption>
+          </figure>
         </div>
       </section>
 
       <section class="slide" data-theme="close" data-title="Решение">
-        <div class="slide__bg kenburns bg2-factory"></div>
+        <div class="slide__bg kenburns bg3-cta"></div>
         <div class="slide__veil veil--heavy"></div>
         <div class="ai-line" aria-hidden="true"></div>
         <p class="watermark" aria-hidden="true">Фабрика Будущего</p>
@@ -448,12 +490,12 @@
             <div class="cta-chip">Табачный лист</div>
             <div class="cta-chip">Без нового оборудования</div>
           </div>
-          <p class="sign reveal" style="--d: 0.62s">TPA · Фабрика Будущего · Пейджер 1 · v2</p>
+          <p class="sign reveal" style="--d: 0.62s">TPA · Фабрика Будущего · Пейджер 1 · v3</p>
         </div>
       </section>
 
       <section class="slide" data-theme="cases" data-title="Примеры наблюдений">
-        <div class="slide__bg kenburns bg2-ai"></div>
+        <div class="slide__bg kenburns bg3-local"></div>
         <div class="slide__veil veil--heavy"></div>
         <div class="slide__inner">
           <p class="eyebrow reveal">15 · Примеры наблюдений</p>
