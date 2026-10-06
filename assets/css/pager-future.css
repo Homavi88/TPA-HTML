@@ -5,10 +5,7 @@ body.future {
 }
 
 .slogan-mark {
-  position: fixed;
-  right: var(--pad);
-  top: 3.2rem;
-  z-index: 55;
+  margin: 0;
   color: var(--gold);
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -98,11 +95,5 @@ body.future {
 @media (max-width: 980px) {
   .slogan-mark {
     display: none;
-  }
-
-  .versions {
-    top: auto;
-    bottom: 3.4rem;
-    left: 1rem;
   }
 }
