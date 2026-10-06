@@ -59,7 +59,7 @@
     <div class="counter" aria-live="polite">
       <span class="counter__now">01</span>
       <span class="counter__slash">/</span>
-      <span class="counter__all">14</span>
+      <span class="counter__all">15</span>
     </div>
 
     <main class="deck" id="deck">
@@ -447,6 +447,56 @@
             <div class="cta-chip">Без нового оборудования</div>
           </div>
           <p class="sign reveal" style="--d: 0.62s">TPA · Фабрика Будущего · Пейджер 1 · v2</p>
+        </div>
+      </section>
+
+      <section class="slide" data-theme="cases" data-title="Примеры наблюдений">
+        <div class="slide__bg kenburns bg2-ai"></div>
+        <div class="slide__veil veil--heavy"></div>
+        <div class="slide__inner">
+          <p class="eyebrow reveal">15 · Примеры наблюдений</p>
+          <h2 class="reveal" style="--d: 0.1s">Примеры наблюдений по нашим партиям.</h2>
+          <p class="body reveal" style="--d: 0.18s">
+            Не общие фразы. Гипотеза, цифры и отдельно — что точно не причина. Мастер подтвердил или поправил: урок вошёл в базу.
+          </p>
+          <div class="cases">
+            <article class="case reveal" style="--d: 0.26s">
+              <div class="case__tag"><span>01 · DRY YIELD</span><span>лоты листа</span></div>
+              <h3>Линия была в цели. Ушло сырьё.</h3>
+              <p>
+                Yield смеси ниже цели. FTD и DCC — температура, газ, скорость — в допуске PPL. Отличие к эталону: доля Thin-листа
+                и выше входная влажность лота.
+              </p>
+              <p class="case__not"><strong>Не причина:</strong> сушилка и рецепт PSS4. Сначала лист, потом линия.</p>
+            </article>
+            <article class="case reveal" style="--d: 0.34s">
+              <div class="case__tag"><span>02 · Влагомер</span><span>тримовка vs QA</span></div>
+              <h3>Датчик «в норме» — лист сушился не так.</h3>
+              <p>
+                Устойчивое расхождение MM / QA +0,24% на финальном влагомере. Контур вёл сушку по заниженному показанию.
+                Аутлайер одной пробы в среднее не пошёл.
+              </p>
+              <p class="case__not"><strong>Наблюдение LLM:</strong> коррекция трима — половина отклонения, не «на глаз».</p>
+            </article>
+            <article class="case reveal" style="--d: 0.42s">
+              <div class="case__tag"><span>03 · Качество</span><span>ручная правка ✏️</span></div>
+              <h3>Партии одной смеси. Соус сменил оператор.</h3>
+              <p>
+                Вопрос: чем эта партия отличается от нормальной? Температуры совпали. LLM пометил ручную смену на AC
+                и отклонение ApplicRatio SP по BC — эталон шёл без правок.
+              </p>
+              <p class="case__not"><strong>Не причина:</strong> рез и скорости Cutter. Класс, который в Excel легко не увидеть.</p>
+            </article>
+            <article class="case reveal" style="--d: 0.5s">
+              <div class="case__tag"><span>04 · Стабильность</span><span>14 партий смеси</span></div>
+              <h3>Yield «плавает» — дрейф внутри партии.</h3>
+              <p>
+                Сравнение четырнадцати партий: версия рецепта та же. Влажность на выходе DCC во второй половине уходит
+                (First15m ≠ Last15m). Не «плохая смесь», а потеря стабильности по ходу.
+              </p>
+              <p class="case__not"><strong>Не причина:</strong> состав лотов в этом срезе был сопоставим.</p>
+            </article>
+          </div>
         </div>
       </section>
     </main>
