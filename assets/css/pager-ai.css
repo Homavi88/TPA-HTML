@@ -1,0 +1,143 @@
+body.ai-mix {
+  --gold: #d8b36a;
+  --gold-2: #f3ddb0;
+}
+
+.bg3-hero {
+  background-image: url("../img/v3/ai-hero-leaf.jpg");
+}
+.bg3-master {
+  background-image: url("../img/v3/ai-master-eye.jpg");
+}
+.bg3-without {
+  background-image: url("../img/v3/ai-without.jpg");
+}
+.bg3-unread {
+  background-image: url("../img/v3/ai-unread.jpg");
+}
+.bg3-formula {
+  background-image: url("../img/v3/ai-formula.jpg");
+}
+.bg3-local {
+  background-image: url("../img/v3/ai-local.jpg");
+}
+.bg3-four {
+  background-image: url("../img/v3/ai-four.jpg");
+}
+.bg3-yield {
+  background-image: url("../img/v3/ai-yield.jpg");
+}
+.bg3-quality {
+  background-image: url("../img/v3/ai-quality.jpg");
+}
+.bg3-moisture {
+  background-image: url("../img/v3/ai-moisture.jpg");
+}
+.bg3-lots {
+  background-image: url("../img/v3/ai-lots.jpg");
+}
+.bg3-shift {
+  background-image: url("../img/v3/ai-shift.jpg");
+}
+.bg3-steps {
+  background-image: url("../img/v3/ai-steps.jpg");
+}
+.bg3-airgap {
+  background-image: url("../img/v3/ai-airgap.jpg");
+}
+.bg3-predict {
+  background-image: url("../img/v3/ai-predict.jpg");
+}
+.bg3-cta {
+  background-image: url("../img/v3/ai-cta-factory.jpg");
+}
+
+.split--shot {
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+}
+
+.shot {
+  margin: 0;
+  border: 1px solid var(--line);
+  background: rgba(9, 8, 6, 0.35);
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+}
+
+.shot__img {
+  height: min(42vh, 340px);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: saturate(1.05) contrast(1.04);
+}
+
+.shot figcaption {
+  padding: 0.75rem 1rem 0.85rem;
+  color: var(--gold-2);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  line-height: 1.45;
+}
+
+.stack {
+  justify-content: center;
+  gap: 0;
+}
+
+.stack .split--shot {
+  margin-bottom: 1.1rem;
+}
+
+.stack .stats {
+  margin-top: 0.4rem;
+}
+
+.ai-mix .veil--mid {
+  background:
+    linear-gradient(105deg, rgba(9, 8, 6, 0.78) 0%, rgba(9, 8, 6, 0.28) 48%, rgba(9, 8, 6, 0.12) 100%);
+}
+
+.triad--stack,
+.steps--stack {
+  grid-template-columns: 1fr;
+  margin-top: 1rem;
+  gap: 0.7rem;
+}
+
+.triad--stack .card,
+.steps--stack .step {
+  padding: 0.85rem 1rem;
+}
+
+.triad--stack h3,
+.steps--stack h3 {
+  font-size: 1.28rem;
+  margin-bottom: 0.3rem;
+}
+
+.split--shot .ticks {
+  margin-top: 0.95rem;
+}
+
+.split--shot .ticks li {
+  padding: 0.55rem 0.8rem 0.55rem 2.1rem;
+  font-size: 0.9rem;
+}
+
+.split--shot .cycle li {
+  padding: 0.7rem 0 0.7rem 1.1rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 980px) {
+  .split--shot {
+    grid-template-columns: 1fr;
+  }
+
+  .shot__img {
+    height: 180px;
+  }
+}

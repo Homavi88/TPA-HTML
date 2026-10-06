@@ -735,7 +735,7 @@ h3 {
 
 @media (max-width: 980px) {
   :root {
-    --chrome-h: 7.4rem;
+    --chrome-h: 8.2rem;
   }
 
   .split,
@@ -777,7 +777,7 @@ h3 {
 
 @media (max-width: 520px) {
   :root {
-    --chrome-h: 8.6rem;
+    --chrome-h: 9.4rem;
   }
 
   .chrome__meta {
