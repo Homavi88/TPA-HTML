@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TPA · Пейджер 1 · Для директоров</title>
+    <meta
+      name="description"
+      content="TPA — Tobacco Production Analyzer. Данные уже на вашей линии. Опыт цеха — в один клик."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/pager.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <header class="chrome">
+      <div class="chrome__brand">
+        <span class="mark">TPA</span>
+        <span class="chrome__sep"></span>
+        <span>Tobacco Production Analyzer</span>
+      </div>
+      <div class="chrome__meta">
+        <span>Пейджер 01</span>
+        <span class="chrome__sep"></span>
+        <span>Для директоров</span>
+      </div>
+      <div class="progress" aria-hidden="true">
+        <i class="progress__bar"></i>
+      </div>
+    </header>
+
+    <aside class="rail" aria-label="Навигация по слайдам">
+      <button class="rail__btn" data-nav="prev" aria-label="Предыдущий слайд">↑</button>
+      <ol class="dots"></ol>
+      <button class="rail__btn" data-nav="next" aria-label="Следующий слайд">↓</button>
+    </aside>
+
+    <div class="counter" aria-live="polite">
+      <span class="counter__now">01</span>
+      <span class="counter__slash">/</span>
+      <span class="counter__all">13</span>
+    </div>
+
+    <main class="deck" id="deck">
+      <section class="slide is-active" data-theme="hero" data-title="Старт">
+        <div class="slide__bg kenburns" style="--bg: url('assets/img/hero-line.jpg')"></div>
+        <div class="slide__veil veil--heavy"></div>
+        <div class="slide__inner cover">
+          <p class="eyebrow reveal" style="--d: 0.05s">Пейджер 1 · Закрытая презентация для директоров</p>
+          <h1 class="display reveal" style="--d: 0.18s">
+            Ваш опыт —<br /><em>в один клик.</em>
+          </h1>
+          <p class="lead reveal" style="--d: 0.36s">
+            TPA соединяет 150+ уже оплаченных параметров линии с экспертизой цеха.
+            Не отчёт. Не ещё один Excel. Инструмент, который отвечает на денежные вопросы в день партии.
+          </p>
+          <div class="cover__meta reveal" style="--d: 0.5s">
+            <div>
+              <strong>DRY YIELD</strong>
+              <span>из месяца — в тот же день</span>
+            </div>
+            <div>
+              <strong>30–60 мин</strong>
+              <span>подготовки → секунды</span>
+            </div>
+            <div>
+              <strong>0 нового железа</strong>
+              <span>данные уже пишутся</span>
+            </div>
+          </div>
+          <p class="hint reveal" style="--d: 0.7s">Листайте вниз · стрелки · пробел</p>
+        </div>
+      </section>
+
+      <section class="slide" data-theme="problem" data-title="Типичный день">
+        <div class="slide__bg kenburns" style="--bg: url('assets/img/unused-data.jpg')"></div>
+        <div class="slide__veil veil--mid"></div>
+        <div class="slide__inner split">
+          <div>
+            <p class="eyebrow reveal">01 · Проблема, которую все узнают</p>
+            <h2 class="reveal" style="--d: 0.12s">Партия закончилась.<br />DRY Yield не в норме.</h2>
+            <p class="body reveal" style="--d: 0.24s">
+              Дальше — знакомый цикл: открыть базу, вытянуть параметры, вспомнить, что именно смотреть, свести в Excel,
+              сравнить с хорошей партией, поспрашивать коллег.
+            </p>
+          </div>
+          <ol class="cycle reveal" style="--d: 0.32s">
+            <li><span>01</span>База и выгрузка</li>
+            <li><span>02</span>Excel и сводка</li>
+            <li><span>03</span>Поиск «той самой» партии</li>
+            <li><span>04</span>Очередь к эксперту</li>
+            <li class="cycle__fail"><span>05</span>Если его нет в Control Room — с нуля</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="slide" data-theme="paid" data-title="Уже оплачено">
+        <div class="slide__bg kenburns slow" style="--bg: url('assets/img/connector.jpg')"></div>
+        <div class="slide__veil veil--heavy"></div>
+        <div class="slide__inner">
+          <p class="eyebrow reveal">02 · Мы уже всё заплатили</p>
+          <h2 class="reveal" style="--d: 0.1s">Данные честно пишутся.<br />Мы ими почти не пользуемся.</h2>
+          <div class="stats">
+            <article class="stat reveal" style="--d: 0.2s">
+              <div class="stat__n" data-count="150" data-suffix="+">0</div>
+              <p>технологических параметров по каждой партии уже фиксирует линия</p>
+            </article>
+            <article class="stat reveal" style="--d: 0.32s">
+              <div class="stat__n" data-count="15" data-prefix="~">0</div>
+              <p>знакомых показателей мы системно смотрим. Остальные 130+ лежат зря</p>
+            </article>
+            <article class="stat reveal" style="--d: 0.44s">
+              <div class="stat__n muted-n">PSS4</div>
+              <p>датчики, кубы ODC, Process Parameter List — сбор уже оплачен</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-theme="gap" data-title="Разрыв">
+        <div class="slide__veil veil--solid"></div>
+        <div class="slide__inner">
+          <p class="eyebrow reveal">03 · Вот и вся проблема</p>
+          <h2 class="reveal" style="--d: 0.12s">Данные есть. Опыт есть.<br />Они не соединены.</h2>
+          <div class="triad">
+            <article class="card reveal" style="--d: 0.22s">
+              <span class="card__k">01</span>
+              <h3>Данные</h3>
+              <p>Температуры, влажность, газ, конвейер, напыление, простои, пробы, состав лотов.</p>
+            </article>
+            <article class="card reveal" style="--d: 0.34s">
+              <span class="card__k">02</span>
+              <h3>Опыт</h3>
+              <p>Как читать цифры, когда что-то пошло не так — живёт в двух-трёх головах. Не передаётся.</p>
+            </article>
+            <article class="card card--gold reveal" style="--d: 0.46s">
+              <span class="card__k">03</span>
+              <h3>TPA</h3>
+              <p>Третий элемент: инструмент, который соединяет оплаченные данные и экспертизу цеха.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-theme="what" data-title="Что такое TPA">
+        <div class="slide__bg kenburns" style="--bg: url('assets/img/ai-brief.jpg')"></div>
+        <div class="slide__veil veil--mid"></div>
+        <div class="slide__inner split">
+          <div>
+            <p class="eyebrow reveal">04 · Что вы покупаете</p>
+            <h2 class="reveal" style="--d: 0.12s">Локальный анализатор партий. Не облако. Не отчёт к пятнице.</h2>
+            <p class="body reveal" style="--d: 0.24s">
+              TPA — Tobacco Production Analyzer. Веб-приложение на рабочем месте. Берёт данные напрямую из производственных баз MSSQL.
+              Всё, что есть в PSS4, кубах ODC и Process Parameter List, видно на одном экране.
+            </p>
+          </div>
+          <ul class="ticks reveal" style="--d: 0.32s">
+            <li>Запуск на рабочем месте, в браузере</li>
+            <li>Прямой доступ к цеховым базам — без ручных выгрузок</li>
+            <li>Одна партия — один экран. Ноль запросов</li>
+            <li>Сравнение 14 партий смеси — за десять секунд</li>
+            <li>AI-разбор на локальной модели и вашей базе знаний</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="slide" data-theme="money" data-title="Четыре вопроса">
+        <div class="slide__veil veil--solid"></div>
+        <div class="slide__inner">
+          <p class="eyebrow reveal">05 · Не «хорошо бы». Нужно</p>
+          <h2 class="reveal" style="--d: 0.1s">Четыре денежных вопроса цеха.</h2>
+          <p class="body reveal" style="--d: 0.2s">Сегодня у каждого либо нет ответа, либо ответ медленный.</p>
+          <div class="quad">
+            <article class="q reveal" style="--d: 0.26s">
+              <em>01</em>
+              <h3>DRY YIELD</h3>
+              <p>Главный KPI. Каждый потерянный пункт — сырьё, энергия и мощность, которые уже прошли через линию.</p>
+            </article>
+            <article class="q reveal" style="--d: 0.36s">
+              <em>02</em>
+              <h3>Качество</h3>
+              <p>Не «хорошее?», а «что именно отличало эту партию от нормальных?» — по 150+ параметрам.</p>
+            </article>
+            <article class="q reveal" style="--d: 0.46s">
+              <em>03</em>
+              <h3>Влагомеры</h3>
+              <p>Если датчик «уходит», контур сушит не так. Вопрос калибровки перестаёт быть мнением.</p>
+            </article>
+            <article class="q reveal" style="--d: 0.56s">
+              <em>04</em>
+              <h3>Табачные лоты</h3>
+              <p>«Линия виновата или сырьё?» — состав лотов виден вместе с параметрами. За минуту.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-theme="yield" data-title="DRY YIELD">
+        <div class="slide__bg kenburns" style="--bg: url('assets/img/dry-yield.jpg')"></div>
+        <div class="slide__veil veil--mid"></div>
+        <div class="slide__inner split">
+          <div>
+            <p class="eyebrow reveal">06 · Главный KPI цеха</p>
+            <h2 class="reveal" style="--d: 0.12s">DRY YIELD: из конца месяца — в тот же день.</h2>
+            <p class="body reveal" style="--d: 0.24s">
+              Соотношение полученного табака (к 0% влажности) к тому, что должно было быть загружено. Чем ближе к 100%, тем лучше.
+              TPA показывает отклонение, гипотезу и основания — пока открывается браузер.
+            </p>
+          </div>
+          <ul class="ticks ticks--tight reveal" style="--d: 0.3s">
+            <li>Значение по партии сразу в списке — не в периодическом отчёте</li>
+            <li>Отклонение от цели смеси на виду; AI прямо говорит, где мы от цели</li>
+            <li>Причина не гадание: параметры вне цели и связи секций</li>
+            <li>Отдельный пункт: что точно <strong>не</strong> причина</li>
+            <li>Сравнение с хорошей партией — параметр за параметром</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="slide" data-theme="pillars" data-title="Качество · Влага · Лоты">
+        <div class="slide__veil veil--solid"></div>
+        <div class="slide__inner">
+          <p class="eyebrow reveal">07 · Три остальных рычага</p>
+          <h2 class="reveal" style="--d: 0.1s">Качество. Калибровка. Сырьё.</h2>
+          <div class="pillars">
+            <article class="pillar reveal" style="--d: 0.2s">
+              <div class="pillar__photo" style="--bg: url('assets/img/quality.jpg')"></div>
+              <h3>Качество продукта</h3>
+              <p>
+                Цели и статусы В ЦЕЛИ / ВНЕ ЦЕЛИ. Параметры, изменённые оператором вручную, помечены отдельно.
+                Проблемная партия сравнивается с эталонной — только значимые отличия.
+              </p>
+            </article>
+            <article class="pillar reveal" style="--d: 0.34s">
+              <div class="pillar__photo" style="--bg: url('assets/img/moisture.jpg')"></div>
+              <h3>Калибровка влагомеров</h3>
+              <p>
+                Пробы тримовки против лаборатории QA. Устойчивое расхождение от 0,2% — уже величина коррекции.
+                Вопрос «какой влагомер ушёл и насколько» становится таблицей.
+              </p>
+            </article>
+            <article class="pillar reveal" style="--d: 0.48s">
+              <div class="pillar__photo" style="--bg: url('assets/img/lots.jpg')"></div>
+              <h3>Табачные лоты</h3>
+              <p>
+                Происхождение, текстура, вес — в той же таблице, что и процесс. Сначала вопрос «сырьё было одинаковым?»,
+                и только потом технические причины.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-theme="shift" data-title="Было / Стало">
+        <div class="slide__veil veil--solid"></div>
+        <div class="slide__inner">
+          <p class="eyebrow reveal">08 · Сдвиг для производства</p>
+          <h2 class="reveal" style="--d: 0.1s">Экспертиза перестаёт быть заложницей календаря.</h2>
+          <div class="table reveal" style="--d: 0.22s">
+            <div class="table__head">
+              <span>Было</span>
+              <span>Стало</span>
+            </div>
+            <div class="table__row">
+              <span>30–60 минут на подготовку данных</span>
+              <span>1 клик, секунды</span>
+            </div>
+            <div class="table__row">
+              <span>Сравнение партий — часы в Excel</span>
+              <span>1–2 минуты, включая AI и экспорт</span>
+            </div>
+            <div class="table__row">
+              <span>«Что проверять?» — спросить у эксперта</span>
+              <span>Система сама расставляет приоритеты</span>
+            </div>
+            <div class="table__row">
+              <span>Ответ, когда эксперт свободен</span>
+              <span>Ответ в любой момент, с аргументами</span>
+            </div>
+            <div class="table__row">
+              <span>Решения живут в чатах и головах</span>
+              <span>Полный лог анализов и диалогов</span>
+            </div>
+            <div class="table__row">
+              <span>Новичок 3–6 месяцев нащупывает базу</span>
+              <span>Система объясняет логику в работе</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-theme="steps" data-title="Три шага">
+        <div class="slide__bg kenburns" style="--bg: url('assets/img/connector.jpg')"></div>
+        <div class="slide__veil veil--heavy"></div>
+        <div class="slide__inner">
+          <p class="eyebrow reveal">09 · Как это выглядит в работе</p>
+          <h2 class="reveal" style="--d: 0.1s">Три шага. Без ритуала выгрузки.</h2>
+          <div class="steps">
+            <article class="step reveal" style="--d: 0.22s">
+              <span>01</span>
+              <h3>Вижу партию целиком</h3>
+              <p>
+                Период, смесь, партия. Секции FTD, DCC, BC/BS/AC, Cutter, фидеры, BFS. Цель и допуск PPL. Ручные правки оператора.
+                Лоты. Пробы влагомеров. Ноль запросов.
+              </p>
+            </article>
+            <article class="step reveal" style="--d: 0.36s">
+              <span>02</span>
+              <h3>Сравниваю за секунды</h3>
+              <p>
+                Две, пять, четырнадцать партий. Значение, отклонение, серьёзность. Фильтр «только значимые».
+                Экспорт с целями PPL и рецепта. Полдня Excel — десять секунд.
+              </p>
+            </article>
+            <article class="step reveal" style="--d: 0.5s">
+              <span>03</span>
+              <h3>Задаю вопрос как коллеге</h3>
+              <p>
+                Локальная модель + ваши 150+ описаний параметров + PR-OM + уроки. Гипотеза, исключения, уверенность.
+                Если данных мало — говорит об этом, а не выдумывает.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-theme="trust" data-title="Доверие">
+        <div class="slide__bg kenburns" style="--bg: url('assets/img/ai-brief.jpg')"></div>
+        <div class="slide__veil veil--mid"></div>
+        <div class="slide__inner">
+          <p class="eyebrow reveal">10 · Справедливый вопрос</p>
+          <h2 class="reveal" style="--d: 0.1s">«А он что, правда понимает производство?»</h2>
+          <div class="triad triad--trust">
+            <article class="card reveal" style="--d: 0.22s">
+              <span class="card__k">I</span>
+              <h3>Не из интернета</h3>
+              <p>Нет доступа в сеть и к чужим базам. Только эта партия, наши правила, наши описания, наши уроки.</p>
+            </article>
+            <article class="card reveal" style="--d: 0.34s">
+              <span class="card__k">II</span>
+              <h3>Не чёрный ящик</h3>
+              <p>У каждой гипотезы — параметры-основания. Данные и версия правил сохранены. Анализ воспроизводим.</p>
+            </article>
+            <article class="card card--gold reveal" style="--d: 0.46s">
+              <span class="card__k">III</span>
+              <h3>Судья — эксперт</h3>
+              <p>
+                Любой фрагмент можно поправить. Подтверждённые уроки входят в базу. Через месяц система знает наши типовые
+                проблемы лучше нового сотрудника.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-theme="road" data-title="Дальше">
+        <div class="slide__veil veil--solid"></div>
+        <div class="slide__inner split road">
+          <div>
+            <p class="eyebrow reveal">11 · Рост без нового оборудования</p>
+            <h2 class="reveal" style="--d: 0.1s">Сейчас — быстрый разбор. Дальше — упреждение.</h2>
+            <p class="body reveal" style="--d: 0.22s">
+              Все следующие шаги — на уже собранных данных. Не новое железо. Фокус анализа.
+            </p>
+          </div>
+          <ol class="roadmap reveal" style="--d: 0.3s">
+            <li>
+              <strong>Прогноз DRY Yield в середине партии</strong>
+              <span>пока партию ещё можно спасти</span>
+            </li>
+            <li>
+              <strong>Контроль стабильности</strong>
+              <span>дрейф параметров до того, как он станет браком</span>
+            </li>
+            <li>
+              <strong>Скрытые зависимости</strong>
+              <span>какие из 150+ параметров реально двигают Yield</span>
+            </li>
+            <li>
+              <strong>Перенос удачной комбинации</strong>
+              <span>на следующую партию с аналогичным сырьём</span>
+            </li>
+            <li>
+              <strong>IS / ET и участок Kitchen</strong>
+              <span>досыпки, соусы и ароматы — уже есть в данных</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="slide" data-theme="close" data-title="Решение">
+        <div class="slide__bg kenburns" style="--bg: url('assets/img/plant-dusk.jpg')"></div>
+        <div class="slide__veil veil--heavy"></div>
+        <div class="slide__inner cover cover--end">
+          <p class="eyebrow reveal">Решение</p>
+          <h2 class="display reveal" style="--d: 0.12s">
+            Данные уже на<br />вашей линии.<br /><em>Включим?</em>
+          </h2>
+          <p class="lead reveal" style="--d: 0.3s">
+            Внедрение — не разовое событие. Каждый разобранный кейс делает систему точнее на ваших партиях.
+            Отдельного периода обучения нет: обучение — это сама работа.
+          </p>
+          <div class="cta-row reveal" style="--d: 0.46s">
+            <div class="cta-chip">Локально</div>
+            <div class="cta-chip">Без нового оборудования</div>
+            <div class="cta-chip">Ответ в день партии</div>
+          </div>
+          <p class="sign reveal" style="--d: 0.62s">TPA · Tobacco Production Analyzer · Пейджер 1</p>
+        </div>
+      </section>
+    </main>
+
+    <div class="keys" aria-hidden="true">
+      <span>↑↓</span>
+      <span>Space</span>
+      <span>F</span>
+    </div>
+
+    <script src="assets/js/pager.js"></script>
+  </body>
+</html>
