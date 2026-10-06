@@ -790,4 +790,12 @@ h3 {
     justify-content: flex-start;
     overflow: auto;
   }
+
+  .cases {
+    margin-top: 0.9rem;
+  }
+
+  .case h3 {
+    font-size: 1.12rem;
+  }
 }
