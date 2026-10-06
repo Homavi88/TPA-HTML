@@ -154,8 +154,9 @@ body {
   left: var(--pad);
   bottom: 1.3rem;
   z-index: 50;
-  font-family: "Cormorant Garamond", Georgia, serif;
-  letter-spacing: 0.08em;
+  font-family: Manrope, "Segoe UI", sans-serif;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.12em;
   color: var(--gold-2);
 }
 
@@ -347,6 +348,11 @@ h2,
 h2 {
   font-size: clamp(2.3rem, 5vw, 4.3rem);
   margin-bottom: 1.1rem;
+}
+
+.display,
+h2 {
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
 }
 
 em {
