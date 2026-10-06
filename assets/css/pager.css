@@ -82,6 +82,33 @@ body {
   background: var(--line);
 }
 
+.versions {
+  position: fixed;
+  top: 3.15rem;
+  left: var(--pad);
+  z-index: 55;
+  display: flex;
+  gap: 0.45rem;
+}
+
+.versions a {
+  text-decoration: none;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  padding: 0.38rem 0.7rem;
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background: rgba(9, 8, 6, 0.45);
+  backdrop-filter: blur(8px);
+}
+
+.versions a.is-on {
+  color: #1a140c;
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
 .progress {
   position: absolute;
   left: 0;
@@ -666,6 +693,12 @@ h3 {
   .rail,
   .keys {
     display: none;
+  }
+
+  .versions {
+    top: auto;
+    bottom: 3.4rem;
+    left: 1rem;
   }
 
   .slide__inner {
