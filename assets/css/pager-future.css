@@ -1,0 +1,108 @@
+body.future {
+  --gold: #d8b36a;
+  --gold-2: #f3ddb0;
+  --leaf: #8fbf6a;
+}
+
+.slogan-mark {
+  position: fixed;
+  right: var(--pad);
+  top: 3.2rem;
+  z-index: 55;
+  color: var(--gold);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
+.future .progress__bar {
+  background: linear-gradient(90deg, #4f7a38, var(--gold-2));
+}
+
+.watermark {
+  position: absolute;
+  right: -2rem;
+  bottom: 8%;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(4rem, 12vw, 10rem);
+  color: rgba(243, 221, 176, 0.05);
+  letter-spacing: -0.04em;
+  pointer-events: none;
+  white-space: nowrap;
+  transform: rotate(-8deg);
+}
+
+.ai-line {
+  position: absolute;
+  inset: auto 0 28% 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(143, 191, 106, 0.55), var(--gold), transparent);
+  animation: pulse 3.4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scaleX(0.85);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.bg2-hero {
+  background-image: url("../img/v2/leaf-hero.jpg");
+}
+.bg2-field {
+  background-image: url("../img/v2/leaf-field.jpg");
+}
+.bg2-inspect {
+  background-image: url("../img/v2/leaf-inspect.jpg");
+}
+.bg2-cure {
+  background-image: url("../img/v2/leaf-cure.jpg");
+}
+.bg2-ai {
+  background-image: url("../img/v2/leaf-ai.jpg");
+}
+.bg2-lots {
+  background-image: url("../img/v2/leaf-lots.jpg");
+}
+.bg2-moisture {
+  background-image: url("../img/v2/leaf-moisture.jpg");
+}
+.bg2-factory {
+  background-image: url("../img/v2/leaf-factory.jpg");
+}
+.bg2-brief {
+  background-image: url("../img/v2/leaf-brief.jpg");
+}
+
+.future .card--gold {
+  background: linear-gradient(180deg, rgba(143, 191, 106, 0.14), rgba(212, 176, 122, 0.08));
+  border-color: rgba(143, 191, 106, 0.4);
+}
+
+.future .cta-chip {
+  border-color: rgba(143, 191, 106, 0.65);
+}
+
+.leaf-chip strong {
+  color: var(--gold-2);
+}
+
+@media (max-width: 980px) {
+  .slogan-mark {
+    display: none;
+  }
+
+  .versions {
+    top: auto;
+    bottom: 3.4rem;
+    left: 1rem;
+  }
+}
