@@ -218,15 +218,46 @@ body {
   transform: scale(0.98) translateY(-16px);
 }
 
-.slide__bg {
-  position: absolute;
-  inset: -4%;
-  background-color: #090806;
-  background-image: var(--bg);
+.slide__bg,
+.pillar__photo {
+  background-color: #1a140f;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.slide__bg {
+  position: absolute;
+  inset: -4%;
   filter: saturate(0.92) contrast(1.05);
+}
+
+.bg-hero {
+  background-image: url("../img/hero-line.jpg");
+}
+.bg-unused {
+  background-image: url("../img/unused-data.jpg");
+}
+.bg-connector {
+  background-image: url("../img/connector.jpg");
+}
+.bg-ai {
+  background-image: url("../img/ai-brief.jpg");
+}
+.bg-yield {
+  background-image: url("../img/dry-yield.jpg");
+}
+.bg-quality {
+  background-image: url("../img/quality.jpg");
+}
+.bg-moisture {
+  background-image: url("../img/moisture.jpg");
+}
+.bg-lots {
+  background-image: url("../img/lots.jpg");
+}
+.bg-plant {
+  background-image: url("../img/plant-dusk.jpg");
 }
 
 .kenburns {
@@ -253,13 +284,13 @@ body {
 
 .veil--heavy {
   background:
-    linear-gradient(90deg, rgba(9, 8, 6, 0.88) 0%, rgba(9, 8, 6, 0.55) 52%, rgba(9, 8, 6, 0.42) 100%),
-    linear-gradient(180deg, rgba(9, 8, 6, 0.35), rgba(9, 8, 6, 0.55));
+    linear-gradient(90deg, rgba(9, 8, 6, 0.78) 0%, rgba(9, 8, 6, 0.42) 54%, rgba(9, 8, 6, 0.22) 100%),
+    linear-gradient(180deg, rgba(9, 8, 6, 0.22), rgba(9, 8, 6, 0.48));
 }
 
 .veil--mid {
   background:
-    linear-gradient(105deg, rgba(9, 8, 6, 0.86) 0%, rgba(9, 8, 6, 0.58) 48%, rgba(9, 8, 6, 0.4) 100%);
+    linear-gradient(105deg, rgba(9, 8, 6, 0.74) 0%, rgba(9, 8, 6, 0.4) 50%, rgba(9, 8, 6, 0.2) 100%);
 }
 
 .veil--solid {
@@ -325,10 +356,11 @@ em {
 
 .lead,
 .body {
-  color: var(--muted);
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
-  line-height: 1.6;
+  color: #d8cbb4;
+  font-size: clamp(1.02rem, 1.5vw, 1.22rem);
+  line-height: 1.65;
   max-width: 42rem;
+  word-spacing: 0.04em;
 }
 
 .cover__meta {
@@ -500,11 +532,7 @@ h3 {
 
 .pillar__photo {
   height: 170px;
-  background-image: var(--bg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  filter: saturate(0.9);
+  filter: saturate(0.95);
 }
 
 .pillar h3,
