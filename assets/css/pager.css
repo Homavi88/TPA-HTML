@@ -93,13 +93,13 @@ body {
 
 .versions a {
   text-decoration: none;
-  color: var(--muted);
-  border: 1px solid var(--line);
-  padding: 0.38rem 0.7rem;
-  font-size: 0.66rem;
+  color: var(--gold-2);
+  border: 1px solid var(--gold);
+  padding: 0.5rem 0.9rem;
+  font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  background: rgba(9, 8, 6, 0.45);
+  background: rgba(9, 8, 6, 0.72);
   backdrop-filter: blur(8px);
 }
 
@@ -107,6 +107,7 @@ body {
   color: #1a140c;
   background: var(--gold);
   border-color: var(--gold);
+  font-weight: 700;
 }
 
 .progress {

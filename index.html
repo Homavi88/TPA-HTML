@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TPA · Пейджер 1 · Для директоров</title>
+    <title>TPA · Фабрика Будущего · Для директоров</title>
     <meta
       name="description"
-      content="TPA — Tobacco Production Analyzer. Данные уже на вашей линии. Опыт цеха — в один клик."
+      content="Фабрика Будущего: TPA внедряет искусственный интеллект на табачной фабрике. Опыт чтения листа — в один клик."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,9 +15,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/pager.css" />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23090806'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia' font-size='22' fill='%23d4b07a'%3ETPA%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="assets/css/pager-future.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23090806'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia' font-size='22' fill='%23d4b07a'%3ETPA%3C/text%3E%3C/svg%3E"
+    />
   </head>
-  <body>
+  <body class="future">
     <div class="noise" aria-hidden="true"></div>
     <div class="vignette" aria-hidden="true"></div>
 
@@ -28,7 +32,7 @@
         <span>Tobacco Production Analyzer</span>
       </div>
       <div class="chrome__meta">
-        <span>Пейджер 01</span>
+        <span>Пейджер 01 · v2</span>
         <span class="chrome__sep"></span>
         <span>Для директоров</span>
       </div>
@@ -38,9 +42,10 @@
     </header>
 
     <nav class="versions" aria-label="Версии презентации">
-      <a href="index.html" class="is-on">Версия 1</a>
-      <a href="fabrika-buduschego.html">Фабрика Будущего</a>
+      <a href="index.html" class="is-on">Фабрика Будущего</a>
+      <a href="pager1-v1.html">Версия 1</a>
     </nav>
+    <p class="slogan-mark">Фабрика Будущего</p>
 
     <aside class="rail" aria-label="Навигация по слайдам">
       <button class="rail__btn" data-nav="prev" aria-label="Предыдущий слайд">↑</button>
@@ -51,128 +56,149 @@
     <div class="counter" aria-live="polite">
       <span class="counter__now">01</span>
       <span class="counter__slash">/</span>
-      <span class="counter__all">13</span>
+      <span class="counter__all">14</span>
     </div>
 
     <main class="deck" id="deck">
-      <section class="slide is-active" data-theme="hero" data-title="Старт">
-        <div class="slide__bg kenburns bg-hero"></div>
+      <section class="slide is-active" data-theme="hero" data-title="Фабрика Будущего">
+        <div class="slide__bg kenburns bg2-hero"></div>
         <div class="slide__veil veil--heavy"></div>
+        <div class="ai-line" aria-hidden="true"></div>
         <div class="slide__inner cover">
-          <p class="eyebrow reveal" style="--d: 0.05s">Пейджер 1 · Закрытая презентация для директоров</p>
-          <h1 class="display reveal" style="--d: 0.18s">
-            Ваш опыт —<br /><em>в один клик.</em>
+          <p class="eyebrow reveal" style="--d: 0.05s">Лозунг компании · Презентация для директоров</p>
+          <h1 class="display reveal" style="--d: 0.16s">
+            Фабрика<br /><em>Будущего.</em>
           </h1>
-          <p class="lead reveal" style="--d: 0.36s">
-            TPA соединяет 150+ уже оплаченных параметров линии с экспертизой цеха.
-            Не отчёт. Не ещё один Excel. Инструмент, который отвечает на денежные вопросы в день партии.
+          <p class="lead reveal" style="--d: 0.34s">
+            Мы внедряем искусственный интеллект туда, где рождается продукт — на лист и на линию.
+            TPA делает экспертизу мастера табака доступной в день партии, без нового оборудования.
           </p>
-          <div class="cover__meta reveal" style="--d: 0.5s">
+          <div class="cover__meta reveal leaf-chip" style="--d: 0.5s">
+            <div>
+              <strong>ИИ на фабрике</strong>
+              <span>локально, на наших данных</span>
+            </div>
+            <div>
+              <strong>Табачный лист</strong>
+              <span>сырьё, качество, влажность</span>
+            </div>
             <div>
               <strong>DRY YIELD</strong>
-              <span>из месяца — в тот же день</span>
-            </div>
-            <div>
-              <strong>30–60 мин</strong>
-              <span>подготовки → секунды</span>
-            </div>
-            <div>
-              <strong>Без железа</strong>
-              <span>данные уже пишутся</span>
+              <span>ответ в тот же день</span>
             </div>
           </div>
           <p class="hint reveal" style="--d: 0.7s">Листайте вниз · стрелки · пробел</p>
         </div>
       </section>
 
-      <section class="slide" data-theme="problem" data-title="Типичный день">
-        <div class="slide__bg kenburns bg-unused"></div>
+      <section class="slide" data-theme="leaf" data-title="Лист">
+        <div class="slide__bg kenburns bg2-field"></div>
         <div class="slide__veil veil--mid"></div>
         <div class="slide__inner split">
           <div>
-            <p class="eyebrow reveal">01 · Проблема, которую все узнают</p>
+            <p class="eyebrow reveal">01 · Мы табачная компания</p>
+            <h2 class="reveal" style="--d: 0.12s">Всё начинается с листа.</h2>
+            <p class="body reveal" style="--d: 0.24s">
+              Происхождение, текстура, влажность, как лист ведёт себя в сушилке — это не «ещё один параметр».
+              Это продукт. Фабрика Будущего умеет читать лист так же внимательно, как мастер, и делает это по каждой партии.
+            </p>
+          </div>
+          <ul class="ticks reveal" style="--d: 0.32s">
+            <li>Лист задаёт Yield ещё до входа на линию</li>
+            <li>Одинаковое сырьё может быть переработано по-разному</li>
+            <li>Вопрос «линия или лот?» должен закрываться за минуту</li>
+            <li>ИИ не заменяет мастера — он несёт его глаз на каждую смену</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="slide" data-theme="problem" data-title="Типичный день">
+        <div class="slide__bg kenburns bg2-cure"></div>
+        <div class="slide__veil veil--mid"></div>
+        <div class="slide__inner split">
+          <div>
+            <p class="eyebrow reveal">02 · Пока ИИ не включён</p>
             <h2 class="reveal" style="--d: 0.12s">Партия закончилась.<br />DRY Yield не в норме.</h2>
             <p class="body reveal" style="--d: 0.24s">
-              Дальше — знакомый цикл: открыть базу, вытянуть параметры, вспомнить, что именно смотреть, свести в Excel,
-              сравнить с хорошей партией, поспрашивать коллег.
+              Дальше знакомый цикл без искусственного интеллекта: база, Excel, поиск «той самой» партии, очередь к эксперту.
+              Фабрика Будущего так не работает.
             </p>
           </div>
           <ol class="cycle reveal" style="--d: 0.32s">
-            <li><span>01</span>База и выгрузка</li>
-            <li><span>02</span>Excel и сводка</li>
-            <li><span>03</span>Поиск «той самой» партии</li>
-            <li><span>04</span>Очередь к эксперту</li>
-            <li class="cycle__fail"><span>05</span>Если его нет в Control Room — с нуля</li>
+            <li><span>01</span>Выгрузка и Excel</li>
+            <li><span>02</span>Вспомнить, что смотреть на листе и на линии</li>
+            <li><span>03</span>Спросить коллегу, если он в Control Room</li>
+            <li class="cycle__fail"><span>04</span>Если нет — опыт листа начинается с нуля</li>
           </ol>
         </div>
       </section>
 
-      <section class="slide" data-theme="paid" data-title="Уже оплачено">
-        <div class="slide__bg kenburns slow bg-connector"></div>
+      <section class="slide" data-theme="paid" data-title="Данные">
+        <div class="slide__bg kenburns slow bg2-ai"></div>
         <div class="slide__veil veil--heavy"></div>
         <div class="slide__inner">
-          <p class="eyebrow reveal">02 · Мы уже всё заплатили</p>
-          <h2 class="reveal" style="--d: 0.1s">Данные честно пишутся.<br />Мы ими почти не пользуемся.</h2>
+          <p class="eyebrow reveal">03 · Инфраструктура уже есть</p>
+          <h2 class="reveal" style="--d: 0.1s">Лист уже оцифрован.<br />ИИ его ещё не читает.</h2>
           <div class="stats">
             <article class="stat reveal" style="--d: 0.2s">
               <div class="stat__n" data-count="150" data-suffix="+">0</div>
-              <p>технологических параметров по каждой партии уже фиксирует линия</p>
+              <p>параметров партии уже пишутся: сушка, влажность листа, газ, напыление, лоты</p>
             </article>
             <article class="stat reveal" style="--d: 0.32s">
               <div class="stat__n" data-count="15" data-prefix="~">0</div>
-              <p>знакомых показателей мы системно смотрим. Остальные 130+ лежат зря</p>
+              <p>показателей смотрим глазами. Остальные 130+ — слепая зона Фабрики Будущего</p>
             </article>
             <article class="stat reveal" style="--d: 0.44s">
-              <div class="stat__n muted-n">PSS4</div>
-              <p>датчики, кубы ODC, Process Parameter List — сбор уже оплачен</p>
+              <div class="stat__n muted-n">AI</div>
+              <p>TPA ставит локальную модель на эти данные — без облака и без нового железа</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="slide" data-theme="gap" data-title="Разрыв">
+      <section class="slide" data-theme="gap" data-title="Три элемента">
         <div class="slide__veil veil--solid"></div>
         <div class="slide__inner">
-          <p class="eyebrow reveal">03 · Вот и вся проблема</p>
-          <h2 class="reveal" style="--d: 0.12s">Данные есть. Опыт есть.<br />Они не соединены.</h2>
+          <p class="eyebrow reveal">04 · Формула Фабрики Будущего</p>
+          <h2 class="reveal" style="--d: 0.12s">Лист. Данные. Искусственный интеллект.</h2>
           <div class="triad">
             <article class="card reveal" style="--d: 0.22s">
               <span class="card__k">01</span>
-              <h3>Данные</h3>
-              <p>Температуры, влажность, газ, конвейер, напыление, простои, пробы, состав лотов.</p>
+              <h3>Табачный лист</h3>
+              <p>Лоты, происхождение, текстура, влажность. То, из чего делается Yield и качество.</p>
             </article>
             <article class="card reveal" style="--d: 0.34s">
               <span class="card__k">02</span>
-              <h3>Опыт</h3>
-              <p>Как читать цифры, когда что-то пошло не так — живёт в двух-трёх головах. Не передаётся.</p>
+              <h3>Данные линии</h3>
+              <p>PSS4, кубы ODC, PPL — уже оплачены. 150+ параметров по каждой партии.</p>
             </article>
             <article class="card card--gold reveal" style="--d: 0.46s">
               <span class="card__k">03</span>
-              <h3>TPA</h3>
-              <p>Третий элемент: инструмент, который соединяет оплаченные данные и экспертизу цеха.</p>
+              <h3>TPA · ИИ</h3>
+              <p>Соединяет лист и линию. Отвечает как коллега: гипотеза, исключения, уверенность.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="slide" data-theme="what" data-title="Что такое TPA">
-        <div class="slide__bg kenburns bg-ai"></div>
+      <section class="slide" data-theme="what" data-title="ИИ на фабрике">
+        <div class="slide__bg kenburns bg2-brief"></div>
         <div class="slide__veil veil--mid"></div>
         <div class="slide__inner split">
           <div>
-            <p class="eyebrow reveal">04 · Что вы покупаете</p>
-            <h2 class="reveal" style="--d: 0.12s">Локальный анализатор партий. Не облако. Не отчёт к пятнице.</h2>
+            <p class="eyebrow reveal">05 · Как внедряем ИИ</p>
+            <h2 class="reveal" style="--d: 0.12s">Не пилот в облаке. ИИ на рабочем месте цеха.</h2>
             <p class="body reveal" style="--d: 0.24s">
-              TPA — Tobacco Production Analyzer. Веб-приложение на рабочем месте. Берёт данные напрямую из производственных баз MSSQL.
-              Всё, что есть в PSS4, кубах ODC и Process Parameter List, видно на одном экране.
+              TPA — локальное веб-приложение. Модель не уходит в интернет. Она видит партию, наши описания 150+ параметров,
+              документы PR-OM и уроки мастеров по листу. Это и есть искусственный интеллект Фабрики Будущего.
             </p>
           </div>
           <ul class="ticks reveal" style="--d: 0.32s">
-            <li>Запуск на рабочем месте, в браузере</li>
-            <li>Прямой доступ к цеховым базам — без ручных выгрузок</li>
-            <li>Одна партия — один экран. Ноль запросов</li>
-            <li>Сравнение 14 партий смеси — за десять секунд</li>
-            <li>AI-разбор на локальной модели и вашей базе знаний</li>
+            <li>Запуск в браузере на рабочем месте</li>
+            <li>Прямой доступ к MSSQL, PSS4, ODC, PPL</li>
+            <li>Одна партия — один экран, включая лоты листа</li>
+            <li>Сравнение 14 партий смеси за десять секунд</li>
+            <li>AI-разбор на языке производства, не общих фраз</li>
           </ul>
         </div>
       </section>
@@ -180,52 +206,52 @@
       <section class="slide" data-theme="money" data-title="Четыре вопроса">
         <div class="slide__veil veil--solid"></div>
         <div class="slide__inner">
-          <p class="eyebrow reveal">05 · Не «хорошо бы». Нужно</p>
-          <h2 class="reveal" style="--d: 0.1s">Четыре денежных вопроса цеха.</h2>
-          <p class="body reveal" style="--d: 0.2s">Сегодня у каждого либо нет ответа, либо ответ медленный.</p>
+          <p class="eyebrow reveal">06 · Зачем ИИ директорам</p>
+          <h2 class="reveal" style="--d: 0.1s">Четыре денежных вопроса вокруг листа.</h2>
+          <p class="body reveal" style="--d: 0.2s">Фабрика Будущего отвечает на них в день партии — не в конце месяца.</p>
           <div class="quad">
             <article class="q reveal" style="--d: 0.26s">
               <em>01</em>
               <h3>DRY YIELD</h3>
-              <p>Главный KPI. Каждый потерянный пункт — сырьё, энергия и мощность, которые уже прошли через линию.</p>
+              <p>Сколько листа дошло до выхода. Каждый потерянный пункт — сырьё, энергия, мощность.</p>
             </article>
             <article class="q reveal" style="--d: 0.36s">
               <em>02</em>
               <h3>Качество</h3>
-              <p>Не «хорошее?», а «что именно отличало эту партию от нормальных?» — по 150+ параметрам.</p>
+              <p>Что на листе и на линии отличало партию от нормальных — по 150+ параметрам.</p>
             </article>
             <article class="q reveal" style="--d: 0.46s">
               <em>03</em>
-              <h3>Влагомеры</h3>
-              <p>Если датчик «уходит», контур сушит не так. Вопрос калибровки перестаёт быть мнением.</p>
+              <h3>Влага листа</h3>
+              <p>Если влагомер «уходит», сушка работает не по листу. Калибровка становится таблицей.</p>
             </article>
             <article class="q reveal" style="--d: 0.56s">
               <em>04</em>
-              <h3>Табачные лоты</h3>
-              <p>«Линия виновата или сырьё?» — состав лотов виден вместе с параметрами. За минуту.</p>
+              <h3>Лоты листа</h3>
+              <p>«Линия виновата или сырьё?» Происхождение и текстура — рядом с процессом.</p>
             </article>
           </div>
         </div>
       </section>
 
       <section class="slide" data-theme="yield" data-title="DRY YIELD">
-        <div class="slide__bg kenburns bg-yield"></div>
+        <div class="slide__bg kenburns bg2-inspect"></div>
         <div class="slide__veil veil--mid"></div>
         <div class="slide__inner split">
           <div>
-            <p class="eyebrow reveal">06 · Главный KPI цеха</p>
-            <h2 class="reveal" style="--d: 0.12s">DRY YIELD: из конца месяца — в тот же день.</h2>
+            <p class="eyebrow reveal">07 · Главный KPI цеха</p>
+            <h2 class="reveal" style="--d: 0.12s">ИИ читает Yield, пока лист ещё в памяти смены.</h2>
             <p class="body reveal" style="--d: 0.24s">
-              Соотношение полученного табака (к 0% влажности) к тому, что должно было быть загружено. Чем ближе к 100%, тем лучше.
-              TPA показывает отклонение, гипотезу и основания — пока открывается браузер.
+              Соотношение полученного табака (к 0% влажности) к загруженному листу. TPA показывает отклонение, гипотезу
+              и основания — пока открывается браузер.
             </p>
           </div>
-          <ul class="ticks ticks--tight reveal" style="--d: 0.3s">
-            <li>Значение по партии сразу в списке — не в периодическом отчёте</li>
-            <li>Отклонение от цели смеси на виду; AI прямо говорит, где мы от цели</li>
-            <li>Причина не гадание: параметры вне цели и связи секций</li>
-            <li>Отдельный пункт: что точно <strong>не</strong> причина</li>
-            <li>Сравнение с хорошей партией — параметр за параметром</li>
+          <ul class="ticks reveal" style="--d: 0.3s">
+            <li>Yield партии сразу в списке, не в месячном отчёте</li>
+            <li>ИИ говорит, где мы от цели смеси</li>
+            <li>Связи секций и параметры вне цели — не гадание</li>
+            <li>Отдельно: что точно не причина</li>
+            <li>Сравнение с хорошей партией того же листа</li>
           </ul>
         </div>
       </section>
@@ -233,31 +259,31 @@
       <section class="slide" data-theme="pillars" data-title="Качество · Влага · Лоты">
         <div class="slide__veil veil--solid"></div>
         <div class="slide__inner">
-          <p class="eyebrow reveal">07 · Три остальных рычага</p>
-          <h2 class="reveal" style="--d: 0.1s">Качество. Калибровка. Сырьё.</h2>
+          <p class="eyebrow reveal">08 · Три рычага на листе</p>
+          <h2 class="reveal" style="--d: 0.1s">Качество. Влажность. Происхождение.</h2>
           <div class="pillars">
             <article class="pillar reveal" style="--d: 0.2s">
-              <div class="pillar__photo bg-quality"></div>
-              <h3>Качество продукта</h3>
+              <div class="pillar__photo bg2-inspect"></div>
+              <h3>Качество листа</h3>
               <p>
-                Цели и статусы В ЦЕЛИ / ВНЕ ЦЕЛИ. Параметры, изменённые оператором вручную, помечены отдельно.
-                Проблемная партия сравнивается с эталонной — только значимые отличия.
+                Цели В ЦЕЛИ / ВНЕ ЦЕЛИ. Ручные правки оператора помечены. Проблемная партия сравнивается с эталонной —
+                только значимые отличия.
               </p>
             </article>
             <article class="pillar reveal" style="--d: 0.34s">
-              <div class="pillar__photo bg-moisture"></div>
-              <h3>Калибровка влагомеров</h3>
+              <div class="pillar__photo bg2-moisture"></div>
+              <h3>Влажность листа</h3>
               <p>
-                Пробы тримовки против лаборатории QA. Устойчивое расхождение от 0,2% — уже величина коррекции.
-                Вопрос «какой влагомер ушёл и насколько» становится таблицей.
+                Пробы тримовки против лаборатории QA. Расхождение от 0,2% — уже величина коррекции влагомера.
+                Тихий параметр, который двигает и качество, и Yield.
               </p>
             </article>
             <article class="pillar reveal" style="--d: 0.48s">
-              <div class="pillar__photo bg-lots"></div>
-              <h3>Табачные лоты</h3>
+              <div class="pillar__photo bg2-lots"></div>
+              <h3>Лоты листа</h3>
               <p>
-                Происхождение, текстура, вес — в той же таблице, что и процесс. Сначала вопрос «сырьё было одинаковым?»,
-                и только потом технические причины.
+                Происхождение, текстура, вес — в той же таблице, что процесс. Сначала «лист был одинаковым?»,
+                потом технические причины.
               </p>
             </article>
           </div>
@@ -267,12 +293,12 @@
       <section class="slide" data-theme="shift" data-title="Было / Стало">
         <div class="slide__veil veil--solid"></div>
         <div class="slide__inner">
-          <p class="eyebrow reveal">08 · Сдвиг для производства</p>
-          <h2 class="reveal" style="--d: 0.1s">Экспертиза перестаёт быть заложницей календаря.</h2>
+          <p class="eyebrow reveal">09 · Что меняет ИИ</p>
+          <h2 class="reveal" style="--d: 0.1s">Мастер листа больше не заложника календаря.</h2>
           <div class="table reveal" style="--d: 0.22s">
             <div class="table__head">
               <span>Было</span>
-              <span>Стало</span>
+              <span>Фабрика Будущего</span>
             </div>
             <div class="table__row">
               <span>30–60 минут на подготовку данных</span>
@@ -283,54 +309,51 @@
               <span>1–2 минуты, включая AI и экспорт</span>
             </div>
             <div class="table__row">
-              <span>«Что проверять?» — спросить у эксперта</span>
-              <span>Система сама расставляет приоритеты</span>
+              <span>«Что смотреть на листе?» — спросить эксперта</span>
+              <span>ИИ сам расставляет приоритеты</span>
             </div>
             <div class="table__row">
               <span>Ответ, когда эксперт свободен</span>
               <span>Ответ в любой момент, с аргументами</span>
             </div>
             <div class="table__row">
-              <span>Решения живут в чатах и головах</span>
-              <span>Полный лог анализов и диалогов</span>
+              <span>Знание листа живёт в двух-трёх головах</span>
+              <span>Полный лог анализов и уроков</span>
             </div>
             <div class="table__row">
               <span>Новичок 3–6 месяцев нащупывает базу</span>
-              <span>Система объясняет логику в работе</span>
+              <span>Система объясняет лист и линию в работе</span>
             </div>
           </div>
         </div>
       </section>
 
       <section class="slide" data-theme="steps" data-title="Три шага">
-        <div class="slide__bg kenburns bg-connector"></div>
+        <div class="slide__bg kenburns bg2-ai"></div>
         <div class="slide__veil veil--heavy"></div>
         <div class="slide__inner">
-          <p class="eyebrow reveal">09 · Как это выглядит в работе</p>
-          <h2 class="reveal" style="--d: 0.1s">Три шага. Без ритуала выгрузки.</h2>
+          <p class="eyebrow reveal">10 · Как ИИ работает в смене</p>
+          <h2 class="reveal" style="--d: 0.1s">Три шага. Лист и линия на одном экране.</h2>
           <div class="steps">
             <article class="step reveal" style="--d: 0.22s">
               <span>01</span>
-              <h3>Вижу партию целиком</h3>
+              <h3>Вижу партию и лист</h3>
               <p>
-                Период, смесь, партия. Секции FTD, DCC, BC/BS/AC, Cutter, фидеры, BFS. Цель и допуск PPL. Ручные правки оператора.
-                Лоты. Пробы влагомеров. Ноль запросов.
+                Период, смесь, партия. Секции линии, цель PPL, ручные правки, лоты листа, пробы влагомеров. Ноль запросов.
               </p>
             </article>
             <article class="step reveal" style="--d: 0.36s">
               <span>02</span>
               <h3>Сравниваю за секунды</h3>
               <p>
-                Две, пять, четырнадцать партий. Значение, отклонение, серьёзность. Фильтр «только значимые».
-                Экспорт с целями PPL и рецепта. Полдня Excel — десять секунд.
+                Две, пять, четырнадцать партий. Отличия по процессу и по сырью. Полдня Excel — десять секунд.
               </p>
             </article>
             <article class="step reveal" style="--d: 0.5s">
               <span>03</span>
-              <h3>Задаю вопрос как коллеге</h3>
+              <h3>Спрашиваю ИИ как коллегу</h3>
               <p>
-                Локальная модель + ваши 150+ описаний параметров + PR-OM + уроки. Гипотеза, исключения, уверенность.
-                Если данных мало — говорит об этом, а не выдумывает.
+                Локальная модель + описания параметров + уроки по листу. Гипотеза, исключения, уверенность. Без выдумок.
               </p>
             </article>
           </div>
@@ -338,28 +361,28 @@
       </section>
 
       <section class="slide" data-theme="trust" data-title="Доверие">
-        <div class="slide__bg kenburns bg-ai"></div>
+        <div class="slide__bg kenburns bg2-brief"></div>
         <div class="slide__veil veil--mid"></div>
         <div class="slide__inner">
-          <p class="eyebrow reveal">10 · Справедливый вопрос</p>
-          <h2 class="reveal" style="--d: 0.1s">«А он что, правда понимает производство?»</h2>
-          <div class="triad triad--trust">
+          <p class="eyebrow reveal">11 · ИИ, которому можно отдать смену</p>
+          <h2 class="reveal" style="--d: 0.1s">Он понимает производство — потому что учится на нашем листе.</h2>
+          <div class="triad">
             <article class="card reveal" style="--d: 0.22s">
               <span class="card__k">I</span>
               <h3>Не из интернета</h3>
-              <p>Нет доступа в сеть и к чужим базам. Только эта партия, наши правила, наши описания, наши уроки.</p>
+              <p>Нет доступа в сеть. Только эта партия, наши правила, наши описания листа и наши уроки.</p>
             </article>
             <article class="card reveal" style="--d: 0.34s">
               <span class="card__k">II</span>
               <h3>Не чёрный ящик</h3>
-              <p>У каждой гипотезы — параметры-основания. Данные и версия правил сохранены. Анализ воспроизводим.</p>
+              <p>У каждой гипотезы — параметры-основания. Анализ воспроизводим. Данные сохранены.</p>
             </article>
             <article class="card card--gold reveal" style="--d: 0.46s">
               <span class="card__k">III</span>
-              <h3>Судья — эксперт</h3>
+              <h3>Судья — мастер</h3>
               <p>
-                Любой фрагмент можно поправить. Подтверждённые уроки входят в базу. Через месяц система знает наши типовые
-                проблемы лучше нового сотрудника.
+                Любой вывод можно поправить. Подтверждённые уроки входят в базу. Через месяц ИИ знает наши типовые
+                проблемы по листу лучше нового сотрудника.
               </p>
             </article>
           </div>
@@ -370,31 +393,31 @@
         <div class="slide__veil veil--solid"></div>
         <div class="slide__inner split road">
           <div>
-            <p class="eyebrow reveal">11 · Рост без нового оборудования</p>
-            <h2 class="reveal" style="--d: 0.1s">Сейчас — быстрый разбор. Дальше — упреждение.</h2>
+            <p class="eyebrow reveal">12 · Дорожная карта Фабрики Будущего</p>
+            <h2 class="reveal" style="--d: 0.1s">Сначала быстрый разбор. Затем ИИ, который предупреждает.</h2>
             <p class="body reveal" style="--d: 0.22s">
-              Все следующие шаги — на уже собранных данных. Не новое железо. Фокус анализа.
+              Все шаги — на уже собранных данных листа и линии. Не новое железо. Фокус интеллекта.
             </p>
           </div>
           <ol class="roadmap reveal" style="--d: 0.3s">
             <li>
               <strong>Прогноз DRY Yield в середине партии</strong>
-              <span>пока партию ещё можно спасти</span>
+              <span>пока лист ещё можно спасти</span>
             </li>
             <li>
               <strong>Контроль стабильности</strong>
-              <span>дрейф параметров до того, как он станет браком</span>
+              <span>дрейф параметров до брака</span>
             </li>
             <li>
-              <strong>Скрытые зависимости</strong>
-              <span>какие из 150+ параметров реально двигают Yield</span>
+              <strong>Скрытые зависимости листа и линии</strong>
+              <span>какие из 150+ параметров двигают Yield</span>
             </li>
             <li>
               <strong>Перенос удачной комбинации</strong>
-              <span>на следующую партию с аналогичным сырьём</span>
+              <span>на следующую партию с тем же сырьём</span>
             </li>
             <li>
-              <strong>IS / ET и участок Kitchen</strong>
+              <strong>IS / ET и Kitchen</strong>
               <span>досыпки, соусы и ароматы — уже есть в данных</span>
             </li>
           </ol>
@@ -402,23 +425,25 @@
       </section>
 
       <section class="slide" data-theme="close" data-title="Решение">
-        <div class="slide__bg kenburns bg-plant"></div>
+        <div class="slide__bg kenburns bg2-factory"></div>
         <div class="slide__veil veil--heavy"></div>
+        <div class="ai-line" aria-hidden="true"></div>
+        <p class="watermark" aria-hidden="true">Фабрика Будущего</p>
         <div class="slide__inner cover cover--end">
           <p class="eyebrow reveal">Решение</p>
           <h2 class="display reveal" style="--d: 0.12s">
-            Данные уже на<br />вашей линии.<br /><em>Включим?</em>
+            Фабрика Будущего<br />начинается с листа.<br /><em>Включим ИИ?</em>
           </h2>
           <p class="lead reveal" style="--d: 0.3s">
-            Внедрение — не разовое событие. Каждый разобранный кейс делает систему точнее на ваших партиях.
-            Отдельного периода обучения нет: обучение — это сама работа.
+            Отдельного периода обучения нет: каждый разобранный кейс по нашему табаку делает модель точнее.
+            Данные уже на линии. Лист уже в цехе. Осталось соединить.
           </p>
           <div class="cta-row reveal" style="--d: 0.46s">
-            <div class="cta-chip">Локально</div>
+            <div class="cta-chip">Локальный ИИ</div>
+            <div class="cta-chip">Табачный лист</div>
             <div class="cta-chip">Без нового оборудования</div>
-            <div class="cta-chip">Ответ в день партии</div>
           </div>
-          <p class="sign reveal" style="--d: 0.62s">TPA · Tobacco Production Analyzer · Пейджер 1</p>
+          <p class="sign reveal" style="--d: 0.62s">TPA · Фабрика Будущего · Пейджер 1 · v2</p>
         </div>
       </section>
     </main>
